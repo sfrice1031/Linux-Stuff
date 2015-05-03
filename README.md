@@ -1,3 +1,2 @@
-# shawnsstuff
-Shawns files and stuff
-A place for me to learn and post my files.
+# Shawns custom configs and random awesomeness
+
