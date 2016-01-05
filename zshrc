@@ -4,37 +4,35 @@
 #         sfrice1031@gmail.com        #
 #######################################
 
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation #
   export ZSH=/home/sfrice1031/.oh-my-zsh
 
-# Set name of the theme to load.
+# Set name of the theme to load #
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="bira"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
+# Uncomment the following line to display red dots whilst waiting for completion #
   COMPLETION_WAITING_DOTS="true"
 
-# Would you like to use another custom folder than $ZSH/custom?
+# Create another custom folder #
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Oh My ZSH Plugins (plugins can be found in ~/.oh-my-zsh/plugins/*) #
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-# User configuration
+# User configuration #
 
  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="/usr/local/man:$MANPATH" #
 
  source $ZSH/oh-my-zsh.sh
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# SSH #
+# export SSH_KEY_PATH="~/.ssh/dsa_id" 
 
-#RVM
+# RVM #
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -62,7 +60,8 @@ plugins=(git)
 # Clear Screen #
  alias c="clear"
 
-# YouTube to MP3 #  
+# YouTube to MP3 #
+# requires youtube-dl & ffmpeg to be installed #  
  ytmp3() { youtube-dl -c --restrict-filenames --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $@ ;}
 
 # Extract compressed files #
