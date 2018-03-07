@@ -11,4 +11,7 @@ My .zshrc file. Customized Zshell for my personal workflow using oh-my-zsh and a
 .Xresources file I use to customize how the URXVT terminal looks and feels. I commented out features that i found useful and wanted to keep incase I wanted to reimplement them later even though they dont currently have a place in my current set up. the colors used are zenburn colors that look amazing if you are using a zenburn color scheme on your machine.
 
 ## i3 config
-My configuration file for the i3 window manager. 
+My configuration file for the i3 window manager. Customised for my specific workflow. I've used quite a bit from using and modifying some examples from [Luke Smith's](https://www.gothub.com/lukesmithxyz) config files.
+
+## Qutebrowser
+My Qutebrowser config files. a very bare bones config containing a few search engine short cuts for the arch wiki, google, youtube, and github. It still uses duckduckgo for the default engine though.
