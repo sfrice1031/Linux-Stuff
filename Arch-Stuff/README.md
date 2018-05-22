@@ -14,7 +14,7 @@ My .zshrc file. Customized Zshell for my personal workflow using oh-my-zsh and a
 My configuration file for the i3 window manager. Customised for my specific workflow. I've used quite a bit from using and modifying some examples from [Luke Smith's](https://www.github.com/lukesmithxyz) config files.
 
 ## Qutebrowser
-My Qutebrowser config files. a very bare bones config containing a few search engine short cuts for the arch wiki, google, youtube, and github. It still uses duckduckgo for the default engine though.
+My Qutebrowser config files. a very bare bones config containing a few search engine short cuts for the arch wiki, google, youtube, github, etc. It still uses duckduckgo for the default engine though.
 
-##vimrc
+## vimrc
 My .vimrc file. Installed vundle and added helpfull plugins and the Zenburn color scheme for my own personal workflow. 
