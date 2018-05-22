@@ -72,6 +72,8 @@ plugins=(git extract)
 # Backlight Brightness #
 brt() { sudo tee /sys/class/backlight/amdgpu_bl0/brightness <<< $@ ;}
 
+# Backup current dot files scripts and code to Git repo #
+bkup() { ~/Scripts/linux-stuff-backup.sh ;}
 
 ####################
 # Transmission CLI #
