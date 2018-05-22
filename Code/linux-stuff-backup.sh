@@ -25,5 +25,5 @@ cd ~/Git/Linux-Stuff
 
 # Update and merge with the repo on github
 git add Arch-Stuff Code
-git merge
-git commit -m "Update"
+git commit -m "Update" 
+git push
