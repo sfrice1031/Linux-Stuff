@@ -9,10 +9,9 @@
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
 # Type: Dict
-c.aliases = {
-'q': 'quit',
-'w': 'session-save',
-'wq': 'quit --save'
+c.aliases = {'q': 'quit',
+ 'w': 'session-save',
+ 'wq': 'quit --save'
 }
 
 # Search engines which can be used via the address bar. Maps a search
@@ -29,5 +28,8 @@ c.url.searchengines = {
 'aw': 'https://wiki.archlinux.org/?search={}', 
 'g': 'https://www.google.com/search?hl=en&q={}', 
 'yt': 'https://www.youtube.com/results?search_query={}',
-'git': 'https://github.com/search?utf8=✓&q={}'
+'git': 'https://github.com/search?utf8=✓&q={}',
+'w': 'https://en.wikipedia.org/w/index.php?search={}&title=Special:Search',
+'y': 'http://search.yahoo.com/news/search?c=&p={}',
+'d': 'http://dictionary.reference.com/browse/{}?s=t'
 }

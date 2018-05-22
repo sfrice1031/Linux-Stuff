@@ -10,5 +10,9 @@ global:
   url.searchengines:
     DEFAULT: https://duckduckgo.com/?q={}
     aw: https://wiki.archlinux.org/?search={}
+    d: http://dictionary.reference.com/browse/{}?s=t
     g: https://www.google.com/search?hl=en&q={}
+    git: https://github.com/search?utf8=✓&q={}
+    w: https://en.wikipedia.org/w/index.php?search={}&title=Special:Search
+    y: http://search.yahoo.com/news/search?c=&p={}
     yt: https://www.youtube.com/results?search_query={}
