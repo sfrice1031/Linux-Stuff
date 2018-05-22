@@ -5,7 +5,7 @@
 #######################################
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/sfrice1031/.oh-my-zsh
+  export ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,17 +46,19 @@ plugins=(git extract)
 ###########
 # Configs #
 ###########
-  alias cfg-AwesomeWM="vim ~/.config/awesome/rc.lua"
+
+  alias cfg-i3="vim ~/.config/i3/config"
   alias cfg-ZSHrc="vim ~/.zshrc"
-  alias cfg-ohmyZSH="vim ~/.oh-my-zsh"
   alias cfg-Xresources="vim ~/.Xresources"
-  alias cfg-AwesomeTHEME="sudo vim /usr/share/awesome/themes/shawnburn/theme.lua"
   alias cfg-VIM="vim ~/.vimrc"
   alias cfg-RangerFM="vim ~/.config/ranger/rc.conf"
 
 #####################
 # Command Functions #
 #####################
+
+# Wifi-Menu #
+  alias wifi-menu="sudo wifi-menu"	
 
 # Clear Screen #
   alias c="clear"
@@ -66,6 +68,9 @@ plugins=(git extract)
 
 # System Update #
   alias pacupdate="sudo pacman -Syu"
+
+# Backlight Brightness #
+brt() { sudo tee /sys/class/backlight/amdgpu_bl0/brightness <<< $@ ;}
 
 
 ####################

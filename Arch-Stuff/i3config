@@ -7,15 +7,16 @@
 hide_edge_borders both
 for_window [class="^.*"] border pixel 0
 gaps inner 35
-#gaps outer 
+gaps outer 35
 set $mod Mod4
+set $term urxvt
 
 # Compton
-exec_always --no-startup-id compton
+#exec_always --no-startup-id compton
 
 # Wallpaper
 # exec_always --no-startup-id wal -a "90" -i ~/Pictures/wal.png 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/darksouls.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/blues_fix_poison_ivy.jpg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -23,6 +24,9 @@ font pango:DejaVu Sans Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Unclutter
+exec --no-startup-id unclutter
 
 # start a terminal
 bindsym $mod+Return exec urxvt
@@ -38,6 +42,32 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
+
+
+
+# #---Dropdown/Scratchpad Windows---# #
+
+bindsym $mod+u	[instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+
+# First I have a tmux window used for background scripts.
+# I'll later bind this to mod+u.
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+# Runs the tmuxinit script, which searches for an earlier tmux instance,
+# otherwise starts a new one (to prevent multiple dropdown sessions).
+exec --no-startup-id $term -name dropdown -e tmux
+
+bindsym $mod+Shift+a	[instance="math"] scratchpad show; [instance="math"] move position center
+
+# Then I have a window running R I use for basic arithmetic
+# I'll later bind this to mod+a.
+for_window [instance="math"] floating enable
+for_window [instance="math"] resize set 800 300
+for_window [instance="math"] move scratchpad
+for_window [instance="math"] border pixel 5
+exec --no-startup-id $term -name math -e python3 -q
 
 # changefocus with arrow keys
 bindsym $mod+Left focus left

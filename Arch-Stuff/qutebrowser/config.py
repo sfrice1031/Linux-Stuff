@@ -31,5 +31,6 @@ c.url.searchengines = {
 'git': 'https://github.com/search?utf8=✓&q={}',
 'w': 'https://en.wikipedia.org/w/index.php?search={}&title=Special:Search',
 'y': 'http://search.yahoo.com/news/search?c=&p={}',
-'d': 'http://dictionary.reference.com/browse/{}?s=t'
+'d': 'http://dictionary.reference.com/browse/{}?s=t',
+'a': 'https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}'
 }

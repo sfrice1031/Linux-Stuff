@@ -15,3 +15,6 @@ My configuration file for the i3 window manager. Customised for my specific work
 
 ## Qutebrowser
 My Qutebrowser config files. a very bare bones config containing a few search engine short cuts for the arch wiki, google, youtube, and github. It still uses duckduckgo for the default engine though.
+
+##vimrc
+My .vimrc file. Installed vundle and added helpfull plugins and the Zenburn color scheme for my own personal workflow. 
