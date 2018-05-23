@@ -26,22 +26,22 @@ cat << "EOF"
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 EOF
 
-# Script i maintain to easily update my Linux-Stuff repo with the latest versions 
+# Script I maintain to easily update my Linux-Stuff repo with the latest versions 
 # of my configs, code, and scripts
 
-# Copying config files into their respective folders
+# Copying local config files into their respective folders in the repo
 cp ~/.zshrc ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.config/i3/config ~/Git/Linux-Stuff/Arch-Stuff
 cp -r ~/.config/qutebrowser ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.vimrc ~/Git/Linux-Stuff/Arch-Stuff
 
-# Copying Code and Scripts into their respective folders
+# Copying local code and scripts into their respective repo folders
 cp ~/Scripts/linux-stuff-backup.sh ~/Git/Linux-Stuff/Code
 
 # Changing into the repo directory
 cd ~/Git/Linux-Stuff/Arch-Stuff
 
-# Renaming files for organization purposes and so dot files aren't hidden
+# Renaming files for organizational purposes and so dot files aren't hidden
 rename config i3config config
 rename .zshrc zshrc .zshrc
 rename .vimrc vimrc .vimrc
