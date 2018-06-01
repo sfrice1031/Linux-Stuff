@@ -30,8 +30,6 @@ git push
 
 # Bob Dobbs respects the 5-10 minutes of slack you've gained back by using this script
 
-clear
-
 cat << "EOF"
 @@@@@@@^^~~~~~~~~~~~~~~~~~~~~^^@@@@@@@@
 @@@@@@^     ~^  @  @@ @ @ @ I  ~^@@@@@@
