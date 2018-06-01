@@ -12,7 +12,7 @@ cp ~/.vimrc ~/Git/Linux-Stuff/Arch-Stuff
 # Copying local code and scripts into their respective repo folders
 cp ~/Scripts/linux-stuff-backup.sh ~/Git/Linux-Stuff/Code
 
-# Changing into the repo directory
+# Changing into the repo's Arch-Stuff directory
 cd ~/Git/Linux-Stuff/Arch-Stuff
 
 # Renaming files for organizational purposes and so dot files aren't hidden
@@ -29,6 +29,8 @@ git commit -m "Update"
 git push
 
 # Bob Dobbs respects the 5-10 minutes of slack you've gained back by using this script
+
+clear
 
 cat << "EOF"
 @@@@@@@^^~~~~~~~~~~~~~~~~~~~~^^@@@@@@@@
@@ -55,3 +57,5 @@ cat << "EOF"
 @@L  `' ,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 EOF
+
+echo "Good job kid!"
