@@ -11,6 +11,8 @@ cp ~/.vimrc ~/Git/Linux-Stuff/Arch-Stuff
 
 # Copying local code and scripts into their respective repo folders
 cp ~/Scripts/linux-stuff-backup.sh ~/Git/Linux-Stuff/Code
+cp ~/Scripts/screenbrightup.sh ~/Git/Linux-Stuff/Code
+cp ~/Scripts/screenbrightdown.sh ~/Git/Linux-Stuff/Code
 
 # Changing into the repo's Arch-Stuff directory
 cd ~/Git/Linux-Stuff/Arch-Stuff
