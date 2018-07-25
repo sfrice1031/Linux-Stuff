@@ -42,6 +42,10 @@ bindsym $mod+F6 exec pamixer -t
 bindsym $mod+F7 exec pamixer -d 5
 bindsym $mod+F8 exec pamixer -i 5
 
+# Brightness
+bindsym $mod+F2 exec ~/Scripts/screenbrightdown.sh
+bindsym $mod+F3 exec ~/Scripts/screenbrightup.sh
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
