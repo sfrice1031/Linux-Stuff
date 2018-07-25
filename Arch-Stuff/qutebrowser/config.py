@@ -32,5 +32,6 @@ c.url.searchengines = {
 'w': 'https://en.wikipedia.org/w/index.php?search={}&title=Special:Search',
 'y': 'http://search.yahoo.com/news/search?c=&p={}',
 'd': 'http://dictionary.reference.com/browse/{}?s=t',
-'a': 'https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}'
+'a': 'https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}',
+'explt': 'https://www.exploit-db.com/search/?action=search&=q{}'
 }

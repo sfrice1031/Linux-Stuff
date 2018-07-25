@@ -3,13 +3,13 @@
 #           By Psych0Shawn0           #
 #         sfrice1031@gmail.com        #
 #######################################
-
+	
 # Path to your oh-my-zsh installation.
-  export ZSH=/usr/share/oh-my-zsh
+	export ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="bira"
+	ZSH_THEME="bira"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 #  COMPLETION_WAITING_DOTS="true"
@@ -20,22 +20,22 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git extract)
+	plugins=(git extract)
 
 # User configuration
 
- export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+	export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
- source $ZSH/oh-my-zsh.sh
+	source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 #RVM
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 
 ######################################
@@ -70,10 +70,10 @@ plugins=(git extract)
   alias pacupdate="sudo pacman -Syu"
 
 # Backlight Brightness #
-brt() { sudo tee /sys/class/backlight/amdgpu_bl0/brightness <<< $@ ;}
+  brt() { sudo tee /sys/class/backlight/amdgpu_bl0/brightness <<< $@ ;}
 
-# Backup current dot files scripts and code to Git repo #
-bkup() { ~/Scripts/linux-stuff-backup.sh ;}
+# Backup current dot files, scripts, and code into my Github repo #
+  bkup() { ~/Scripts/linux-stuff-backup.sh ;}
 
 ####################
 # Transmission CLI #

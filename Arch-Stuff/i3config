@@ -1,6 +1,6 @@
 ##########################################################
 #              Shawn's i3-Gaps Config File               #
-#                        01/09/18                        #
+#                        07/24/18                        #
 ##########################################################
 
 # Basic Definitions
@@ -28,22 +28,25 @@ floating_modifier $mod
 # Unclutter
 exec --no-startup-id unclutter
 
-# start a terminal
+# Start a terminal
 bindsym $mod+Return exec urxvt
 
-# kill focused window
+# Kill focused window
 bindsym $mod+Shift+c kill
 
-# launch rofi (in run mode)
+# Launch rofi (in run mode)
 bindsym $mod+d exec rofi -show run
+
+# Volume Control
+bindsym $mod+F6 exec pamixer -t
+bindsym $mod+F7 exec pamixer -d 5
+bindsym $mod+F8 exec pamixer -i 5
 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
-
-
 
 # #---Dropdown/Scratchpad Windows---# #
 
