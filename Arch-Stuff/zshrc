@@ -53,6 +53,7 @@
   alias cfg-VIM="vim ~/.vimrc"
   alias cfg-RangerFM="vim ~/.config/ranger/rc.conf"
   alias cfg-cryptofolio="vim ~/Git/cryptocurrency-cli/portfolio.json"
+  alias cfg-linuxstuffbackup="vim ~/Scripts/linux-stuff-backup.sh"
 
 #####################
 # Command Functions #

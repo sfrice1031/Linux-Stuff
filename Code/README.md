@@ -7,3 +7,6 @@ I will be continuing to add to and modify this with more configs I use on a dail
 
 ## screenbrightdown.sh & screenbrightup.sh
 These are scripts I've made to adjust the backlight on my laptop. I've implemented them by using keybindings in my i3 config file and mapping them to the brightness keys on my laptop which happen to be F2 and F3.
+
+## cryptoportfolio.sh
+A script to launch github user Christ0ph3er's cryptocurrency-cli program every 5 minutes to view your cryptocurrency portfolio.

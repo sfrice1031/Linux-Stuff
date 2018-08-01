@@ -4,7 +4,7 @@
 
 # https://github.com/christ0ph3r/cryptocurrency-cli
 
-# Clears the screen and change the working directory to my cryptocurrency-cli directory then launches it
+# Clears the screen and change the working directory to my cryptocurrency-cli directory then launches it every 5 minutes
 
 while true; do
 	clear && cd ~/Git/cryptocurrency-cli && npm start
