@@ -52,6 +52,7 @@
   alias cfg-Xresources="vim ~/.Xresources"
   alias cfg-VIM="vim ~/.vimrc"
   alias cfg-RangerFM="vim ~/.config/ranger/rc.conf"
+  alias cfg-cryptofolio="vim ~/Git/cryptocurrency-cli/portfolio.json"
 
 #####################
 # Command Functions #
@@ -70,10 +71,13 @@
   alias pacupdate="sudo pacman -Syu"
 
 # Backlight Brightness #
-  brt() { sudo tee /sys/class/backlight/amdgpu_bl0/brightness <<< $@ ;}
+  brt() { sudo chmod 646 /sys/class/backlight/amdgpu_bl0/brightness ;}
 
 # Backup current dot files, scripts, and code into my Github repo #
   bkup() { ~/Scripts/linux-stuff-backup.sh ;}
+
+# Cryptoportfolio Launch
+  cryptofolio() { ~/Scripts/cryptoportfolio.sh ;}
 
 ####################
 # Transmission CLI #
