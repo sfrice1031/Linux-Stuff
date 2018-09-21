@@ -3,18 +3,17 @@
 
 config_version: 2
 settings:
-  aliases:
-    global:
-      q: quit
-      w: session-save
-      wq: quit --save
   url.searchengines:
     global:
       DEFAULT: https://duckduckgo.com/?q={}
+      a: https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={}
       aw: https://wiki.archlinux.org/?search={}
       d: http://dictionary.reference.com/browse/{}?s=t
+      explt: https://www.exploit-db.com/search/?action=:search&=q{}
       g: https://www.google.com/search?hl=en&q={}
       git: https://github.com/search?utf8=✓&q={}
       w: https://en.wikipedia.org/w/index.php?search={}&title=Special:Search
       y: http://search.yahoo.com/news/search?c=&p={}
       yt: https://www.youtube.com/results?search_query={}
+  url.start_pages:
+    global: https://start.duckduckgo.com
