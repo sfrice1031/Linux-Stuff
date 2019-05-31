@@ -3,11 +3,14 @@
 #                        07/24/18                        #
 ##########################################################
 
+# export FILE="ranger"
+# export TERMINAL="st"
+
 # Basic Definitions
 hide_edge_borders both
 for_window [class="^.*"] border pixel 2
 gaps inner 35
-gaps outer 35
+gaps outer 0
 set $mod Mod4
 set $term urxvt
 
@@ -15,12 +18,12 @@ set $term urxvt
 #exec_always --no-startup-id compton
 
 # Wallpaper
-# exec_always --no-startup-id wal -a "90" -i ~/Pictures/wal.png 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/adk.jpg
+exec_always --no-startup-id wal -a "90" -i ~/Pictures/Wallpapers/wal.jpg 
+# exec_always --no-startup-id feh --bg-scale ~/Pictures/memewall.jpg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:DejaVu Sans Mono 8
+font pango:SourceCodePro Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -29,13 +32,18 @@ floating_modifier $mod
 exec --no-startup-id unclutter
 
 # Start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # Kill focused window
 bindsym $mod+Shift+c kill
 
+# Program keybindings #
+
 # Launch rofi (in run mode)
 bindsym $mod+d exec rofi -show run
+
+# Launch calcurse
+bindsym $mod+c exec st -e calcurse
 
 # Volume Control
 bindsym $mod+F6 exec pamixer -t
@@ -43,15 +51,19 @@ bindsym $mod+F7 exec pamixer -d 5
 bindsym $mod+F8 exec pamixer -i 5
 
 # Brightness
-bindsym $mod+F2 exec ~/Scripts/screenbrightdown.sh
-bindsym $mod+F3 exec ~/Scripts/screenbrightup.sh
+#bindsym $mod+F2 exec ~/Scripts/screenbrightdown.sh
+#bindsym $mod+F3 exec ~/Scripts/screenbrightup.sh
+
+# Program Keybindings
+
+# Launch Ranger File Manager
+bindsym $mod+Mod1+r exec st -e ranger
 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
-
 
 # Dropdown Terminal Scratchpad
 
@@ -61,10 +73,9 @@ for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 625 400
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 2
-exec --no-startup-id $term -name dropdown -e tmux
+exec --no-startup-id $term -name dropdown
 
 # Python Shell Scratchpad
-
 bindsym $mod+Shift+a	[instance="math"] scratchpad show; [instance="math"] move position center
 
 for_window [instance="math"] floating enable

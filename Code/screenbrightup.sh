@@ -8,6 +8,6 @@ brightness=$(< $brightness_file)
 
 if [ $((brightness < 255)) '=' 1 ]
 then
-    brightness=$((brightness + 25))
+    brightness=$((brightness + 5))
     echo -n $brightness > $brightness_file
 fi

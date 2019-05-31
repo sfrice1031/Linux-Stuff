@@ -5,7 +5,7 @@
 #######################################
 	
 # Path to your oh-my-zsh installation.
-	export ZSH=/usr/share/oh-my-zsh
+	export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -24,7 +24,13 @@
 
 # User configuration
 
+    export EDITOR="vim"
 	export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+	export TERMINAL="st"
+	export BROWSER="qutebroser"
+	export READER="zathura"
+	export FILE="ranger"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -54,7 +60,11 @@
   alias cfg-RangerFM="vim ~/.config/ranger/rc.conf"
   alias cfg-cryptofolio="vim ~/Git/cryptocurrency-cli/portfolio.json"
   alias cfg-linuxstuffbackup="vim ~/Scripts/linux-stuff-backup.sh"
-
+  alias cfg-xinitrc="vim ~/.xinitrc"
+  alias cfg-dwm="cd ~/Git/suckless/dwm && vim config.h"
+  alias cfg-slstatus="cd ~/Git/suckless/slstatus && vim config.h"
+  alias cfg-st="cd ~/Git/suckless/st && vim config.h"
+  alias cfg-surf="cd ~/Git/suckless/surf && vim config.h"
 #####################
 # Command Functions #
 #####################
