@@ -33,7 +33,7 @@ git commit -m "Script Update"
 git push &&
 
 # Bob Dobbs respects the 5-10 minutes of slack you've gained back by using this script
-cat << "EOF"
+cat << "EOF" 
 @@@@@@@^^~~~~~~~~~~~~~~~~~~~~^^@@@@@@@@
 @@@@@@^     ~^  @  @@ @ @ @ I  ~^@@@@@@
 @@@@@            ~ ~~ ~I          @@@@@
@@ -57,6 +57,6 @@ cat << "EOF"
 @@   @,   ,@@@,_____   _,J@@@@@@@@@@@@@
 @@L  `' ,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-EOF
-
+EOF 
+&&
 echo "Good job kid!"
