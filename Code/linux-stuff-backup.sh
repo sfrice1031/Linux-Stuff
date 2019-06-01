@@ -7,8 +7,8 @@
 cp ~/.zshrc ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.config/i3/config ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.vimrc ~/Git/Linux-Stuff/Arch-Stuff
+cp ~/.xinitrc  ~/Git/Linux-Stuff/Arch-Stuff
 cp -r ~/.config/qutebrowser ~/Git/Linux-Stuff/Arch-Stuff
-cp  ~/.xinitrc  ~/Git/Linux-Stuff/Arch-Stuff
 
 # Copying local code and scripts into their respective repo folders
 cp ~/Scripts/linux-stuff-backup.sh ~/Git/Linux-Stuff/Code
@@ -30,12 +30,9 @@ cd ~/Git/Linux-Stuff
 # Update and merge with the repo on github
 git add Arch-Stuff Code
 git commit -m "Script Update" 
-git push
+git push && clear
 
 # Bob Dobbs respects the 5-10 minutes of slack you've gained back by using this script
-
-#clear
-
 cat << "EOF"
 @@@@@@@^^~~~~~~~~~~~~~~~~~~~~^^@@@@@@@@
 @@@@@@^     ~^  @  @@ @ @ @ I  ~^@@@@@@
