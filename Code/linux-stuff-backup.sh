@@ -59,4 +59,4 @@ cat << "EOF"
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 EOF 
 
-&& echo "Good job kid!"
+echo "Good job kid!"
