@@ -30,7 +30,7 @@ cd ~/Git/Linux-Stuff
 # Update and merge with the repo on github
 git add Arch-Stuff Code
 git commit -m "Script Update" 
-git push 
+git push && clear 
 
 # Bob Dobbs respects the 5-10 minutes of slack you've gained back by using this script
 cat << "EOF" 
