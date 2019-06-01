@@ -8,7 +8,7 @@ cp ~/.zshrc ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.config/i3/config ~/Git/Linux-Stuff/Arch-Stuff
 cp ~/.vimrc ~/Git/Linux-Stuff/Arch-Stuff
 cp -r ~/.config/qutebrowser ~/Git/Linux-Stuff/Arch-Stuff
-cp -r ~/Git/suckless  ~/Git/Linux-Stuff/Arch-Stuff
+cp  ~/.xinitrc  ~/Git/Linux-Stuff/Arch-Stuff
 
 # Copying local code and scripts into their respective repo folders
 cp ~/Scripts/linux-stuff-backup.sh ~/Git/Linux-Stuff/Code
